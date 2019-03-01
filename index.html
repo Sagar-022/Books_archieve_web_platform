@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+	<title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+	<section class="container">
+    	<header>
+        	<div class="logo">
+            	<img src="logo.png" width="379" height="130" alt="logo">
+            </div>
+        </header>
+        <nav>
+        	<ul>
+            	<li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+				<li class="btn">
+                        <a href="login.html"><i class="fa fa-user"></i>Login</a>
+                        
+                </li>
+
+               
+            </ul>
+
+            <input type="text" placeholder="Search..">
+        </nav>
+        <div class="banner">
+        	<img class="mySlides" src="banner.jpg" width="1350" height="250" alt="banner">
+            <img class="mySlides" src="banner2.png" width="1350" height="250" alt="banner">
+            <img class="mySlides" src="banner3.jpg" width="1350" height="250" alt="banner">
+            <img class="mySlides" src="banner4.jpg" width="1350" height="250" alt="banner">
+            <img class="mySlides" src="banner5.jpg" width="1350" height="250" alt="banner">
+
+
+<script type="text/javascript">
+
+                    var slideIndex = 0;
+slideShow();
+
+function slideShow() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(slideShow, 2000);
+}
+    
+
+
+</script>
+
+
+
+        </div>
+    <div class="content_area">		
+<div class="content_left">
+
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openType(event, 'Academic')">Academic</button>
+  <button class="tablinks" onclick="openType(event, 'Nonacademic')">Nonacademic</button>
+</div>
+
+<div id="Academic" class="tabcontent">
+  <h1>Academic</h1><br>
+  <p>
+    <ul>
+                <li><a href="">CSE</a></li>
+                <li><a href="">EEE</a></li>
+                <li><a href="">ME</a></li>
+                <li><a href="">CE</a></li>
+                <li><a href="">ECE</a></li>
+                <li><a href="">IEM</a></li>
+
+               
+    </ul>
+</p>
+</div>
+
+<div id="Nonacademic" class="tabcontent">
+  <h1>Non-academic</h1><br>
+  <p>
+      <ul>
+                <li><a href="">Novel</a></li>
+                <li><a href="">Poetry</a></li>
+                <li><a href="">Science Fiction</a></li>
+                <li><a href="">Comedy</a></li>
+                <li><a href="">Comics</a></li>
+                <li><a href="">Horror</a></li>
+      </ul>
+  </p> 
+</div>
+
+
+<script type="text/javascript">
+    function openType(evt, name) {
+    
+    var i, tabcontent, tablinks;
+
+   
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+  
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+
+
+
+ 
+			
+
+</div>
+            <div class="content_right">
+            	<p style="color:white;font-size:20px;">Hello there,welcome to this sharing site.Here you will find your academic books that have a pdf form.Also you can get some non-academic books here,all of which are ovbiously free to download.So,enjoy it and share what you have.</p>
+				</br>
+				<img src="book.jpg" width="250" height="300" alt="Morris mano book">
+				</br>
+				<a href="https://www.pdfdrive.net/digital-logic-and-computer-design-by-m-morris-mano-e34332016.html">Click here to download the book</a>
+            </div>
+	</div>
+        <footer>
+        	<div class="footer_left">
+            	<p>Copyright &copy; All Right Reserved</p>
+            </div>
+            <div class="footer_right">
+            	<div class="social_images">
+            		<img src="facebook_icon.gif" width="165" height="100" alt="fb">
+                	<img src="twitter_icon.gif" width="150" height="113" alt="tw">
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
