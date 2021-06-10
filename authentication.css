@@ -13,6 +13,10 @@ body {
   font-size: 14px;
 }
 
+.home{
+  float:right;
+}
+
 form {
   position: relative;
   margin: auto;
