@@ -1,40 +1,64 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="books_archieve_final.login" %>
-
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Authentication</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="login.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="authentication.css"
+    />
+  </head>
+  <body>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="login.css"/>
-</head>
-<body>
-    <form runat="server">
-  <div class="imgcontainer">
-    <img src="image/login_avatar.png" width="10" height="100" alt="Avatar" class="avatar"/>
-  </div>
+    <header>
+          <div class="logo">
+              <img src="logo.png" width="379" height="130" alt="logo">
+            </div>
+    </header>
+    
+    <form>
+      <div class="labellr">log In</div>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <asp:TextBox ID="username_textbox" runat="server"></asp:TextBox>
-
-    <label for="psw"><b>Password</b></label>
-   
-      <asp:TextBox ID="pass_textbox" runat="server"></asp:TextBox>
-
-    <asp:Button ID="login_button" runat="server" Text="Login" OnClick="login_button_Click1" BackColor="#FBE0A8" />
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    &nbsp;</div>
-
+      <div class="login_form">
+        <div class="text">
+          Don't have an account? <b><a href="register.html">Sign Up</a></b>
+        </div>
+        <input type="text" placeholder="email" />
+        <input type="password" placeholder="password" />
+        <input id="logged_in" type="checkbox" />
+        <label class="content_label" for="logged_in">Keep me logged in </label>
+        <input id="login" type="submit" value="Log In" />
+      </div>
+    </form>
+<footer>
+          <div class="footer_left">
+              <p>Copyright &copy; All Right Reserved</p>
+            </div>
+            <div class="footer_right">
+              <div class="social_images">
+                <img src="facebook_icon.gif" width="165" height="100" alt="fb">
+                  <img src="twitter_icon.gif" width="150" height="113" alt="tw">
+                </div>
+            </div>
+</footer>
   
-</form>
-    <p>
-        &nbsp;</p>
-    <p>
-        &nbsp;</p>
-    <p style="font-size:larger">
-        New???&nbsp; <a href="register.aspx">Create Account</a></p>
-</body>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
+
