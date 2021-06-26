@@ -176,6 +176,7 @@ form {
 	
 }
 .footer_left{
+	background-color:#0168ab;
 	width:40%;
 	float:left;
 }
@@ -185,6 +186,7 @@ form {
 	color:#0168ab;;
 }
 .footer_right{
+	background-color:#0168ab;
 	width:60%;
 	float:right;
 }
