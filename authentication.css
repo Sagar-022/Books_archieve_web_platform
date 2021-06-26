@@ -6,7 +6,7 @@
 }
 
 body {
-  
+  height: auto;
   /*background-image: url("bg.jpg");*/
   font-size: 14px;
 }
