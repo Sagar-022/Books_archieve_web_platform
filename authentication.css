@@ -6,7 +6,7 @@
 }
 
 body {
-  background: cornflowerblue;
+  
   /*background-image: url("bg.jpg");*/
   background-repeat: none;
   background-size: cover;
@@ -65,6 +65,7 @@ nav input[type=text] {
 }
 
 form {
+  background: cornflowerblue;
   position: relative;
   margin: auto;
   margin-top: 10em;
